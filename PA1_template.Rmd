@@ -203,11 +203,11 @@ head(stepsbyWeek)
 
 str(stepsbyWeek)
 
-(d1 <- ggplot(data = stepsbyWeek, aes(x = interval, y = steps, color = weekend )) +    
+ggplot(data = stepsbyWeek, aes(x = interval, y = steps, color = weekend )) +    
         scale_x_continuous(name ="5-Minute Interval") + 
         scale_y_continuous(name = " Number of  Steps")+
         geom_line() + 
-        facet_wrap(~weekend, nrow = 2))
+        facet_wrap(~weekend, nrow = 2)
 
 
 ```

@@ -360,20 +360,14 @@ str(stepsbyWeek)
 ```
 
 ```r
-(d1 <- ggplot(data = stepsbyWeek, aes(x = interval, y = steps, color = weekend )) +    
+ggplot(data = stepsbyWeek, aes(x = interval, y = steps, color = weekend )) +    
         scale_x_continuous(name ="5-Minute Interval") + 
         scale_y_continuous(name = " Number of  Steps")+
         geom_line() + 
-        facet_wrap(~weekend, nrow = 2))
+        facet_wrap(~weekend, nrow = 2)
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
-
-```r
-#(d2<- d1 + facet_wrap(~weekend, nrow = 2))
-
-#d2 + theme_linedraw()
-```
 
 
 
